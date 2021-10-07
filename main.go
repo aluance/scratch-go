@@ -9,7 +9,11 @@ import (
 func main() {
 	fmt.Println("Hello!")
 
-	if err := tasks.DoSomething(); err != nil {
+	if err := tasks.CauseModify(); err != nil {
 		panic("Something went wrong!")
 	}
+
+	// if err := tasks.DoSomething(); err != nil {
+	// 	panic("Something went wrong!")
+	// }
 }
